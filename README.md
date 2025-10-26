@@ -7,18 +7,21 @@ This is the multifarmbot ROS2 repository for multi-robot farming applications.
 1. Install ROS2 (e.g., Humble Hawksbill) following the [official guide](https://docs.ros.org/en/humble/Installation.html).
 
 2. Clone this repository:
-   ```
+
+   ```bash
    git clone https://github.com/tomo1000cmd/multifarmbot.git
    cd multifarmbot
    ```
 
 3. Build the workspace:
-   ```
+
+   ```bash
    colcon build
    ```
 
 4. Source the setup:
-   ```
+
+   ```bash
    source install/setup.bash
    ```
 
@@ -36,3 +39,13 @@ This is the multifarmbot ROS2 repository for multi-robot farming applications.
 ## Usage
 
 Run example launch files or nodes as needed. Refer to individual package READMEs for details.
+
+### Launching Robots in RViz
+
+To visualize the three robots in RViz:
+
+```bash
+ros2 launch multifarmbot_bringup multifarmbot_rviz.launch.py
+```
+
+This will start RViz with the three robots, each in their own namespace, along with joint state publishers for interaction.
