@@ -1,0 +1,4 @@
+[0.019s] Invoking command in '/home/emmanuel/multifarmbot/build/multifarmbot': /usr/bin/cmake /home/emmanuel/multifarmbot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/emmanuel/multifarmbot/install/multifarmbot
+[0.045s] [0mCMake Error: The source directory "/home/emmanuel/multifarmbot" does not appear to contain CMakeLists.txt.
+[0.045s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.048s] Invoked command in '/home/emmanuel/multifarmbot/build/multifarmbot' returned '1': /usr/bin/cmake /home/emmanuel/multifarmbot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/emmanuel/multifarmbot/install/multifarmbot
