@@ -1,8 +1,10 @@
+import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
+from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Declare arguments
@@ -19,16 +21,16 @@ def generate_launch_description():
     nodes = []
 
     for robot in robots:
-        urdf_path = PathJoinSubstitution([
-            FindPackageShare('multifarmbot_description'), 'urdf', f'{robot}.urdf'
-        ])
+        urdf_file = os.path.join(get_package_share_directory('multifarmbot_description'), 'urdf', f'{robot}.urdf')
+        with open(urdf_file, 'r') as f:
+            urdf_content = f.read()
 
         robot_state_publisher = Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
             name=f'{robot}_robot_state_publisher',
             namespace=robot,
-            parameters=[{'robot_description': urdf_path}],
+            parameters=[{'robot_description': urdf_content}],
             output='screen'
         )
 

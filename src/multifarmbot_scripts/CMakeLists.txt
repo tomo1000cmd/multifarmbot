@@ -5,9 +5,4 @@ find_package(ament_cmake_python REQUIRED)
 
 ament_python_install_package(${PROJECT_NAME})
 
-install(PROGRAMS
-  scripts/example_script.py
-  DESTINATION lib/${PROJECT_NAME}
-)
-
 ament_package()
