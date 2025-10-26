@@ -3,7 +3,7 @@
   <name>multifarmbot</name>
   <version>0.0.1</version>
   <description>Metapackage for multifarmbot ROS2 project</description>
-  <maintainer email="emmanuel@example.com">emmanuel</maintainer>
+  <maintainer email="tomoemmanuel@gmail.com">emmanuel tomo</maintainer>
   <license>Apache-2.0</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <exec_depend>multifarmbot_agents</exec_depend>
