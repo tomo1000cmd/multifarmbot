@@ -1,2 +1,0 @@
-Invoking command in '/home/emmanuel/multifarmbot/build/multifarmbot': /usr/bin/cmake /home/emmanuel/multifarmbot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/emmanuel/multifarmbot/install/multifarmbot
-Invoked command in '/home/emmanuel/multifarmbot/build/multifarmbot' returned '1': /usr/bin/cmake /home/emmanuel/multifarmbot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/emmanuel/multifarmbot/install/multifarmbot
